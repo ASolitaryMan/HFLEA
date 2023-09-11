@@ -699,16 +699,14 @@ if __name__ == "__main__":
     parser.add_argument('--lr', type=float, default=0.0001, metavar='LR', help='learning rate')
     parser.add_argument('--l2', type=float, default=0.00001, metavar='L2', help='L2 regularization weight')#0.00001
     parser.add_argument('--dropout', type=float, default=0.3, metavar='dropout', help='dropout rate')
-    parser.add_argument('--batch_size', type=int, default=32, metavar='BS', help='batch size')
+    parser.add_argument('--batch_size', type=int, default=64, metavar='BS', help='batch size')
     parser.add_argument('--num_workers', type=int, default=0, metavar='nw', help='number of workers')
     parser.add_argument('--epochs', type=int, default=40, metavar='E', help='number of epochs')
     parser.add_argument('--seed', type=int, default=1234, help='make split manner is same with same seed')
     parser.add_argument('--fp16', type=bool, default=True, help='whether to use fp16')
     parser.add_argument('--gradient_accumulation_steps', type=int, default=1, help='gradient_accumulation_steps')
     parser.add_argument('--max_length', type=int, default=10, help='max length of audio')
-    #8,8
-    #2,8,4, mask 64
-    #最好的参数是max_len 8, 1e-4, 5e-4 session5
+ 
     
     args = parser.parse_args()
 
