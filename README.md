@@ -13,17 +13,17 @@ Official implemention for the paper "Frame-level emotion state alignment method 
 
 ## Framework of method
 
-![image-20230911174327140](/Users/liqifei/Library/Application Support/typora-user-images/image-20230911174327140.png)
+![image](https://github.com/ASolitaryMan/HFLEA/assets/42258022/dca6f20b-a4ca-4edd-b616-5248bdbb6194)
 
 ## Results on IEMOCAP
 
-![image-20230911174352312](/Users/liqifei/Library/Application Support/typora-user-images/image-20230911174352312.png)
+![image](https://github.com/ASolitaryMan/HFLEA/assets/42258022/08ea33f5-016a-4938-be7a-c024e73cb782)
 
 ## The format of training, validation, and test sources
 
 You need  three scp files containing training, validation and test sources, which are divided according to the methods described in the paper . These scp files are shown as following format (**wav_name, wav_path, wav_label)**:
 
-![image-20230911175025535](/Users/liqifei/Library/Application Support/typora-user-images/image-20230911175025535.png)
+![image](https://github.com/ASolitaryMan/HFLEA/assets/42258022/0f7e245b-0087-464c-91fe-2a00ebd18bdf)
 
 ## Phase 1. TPAT and Cluster
 
