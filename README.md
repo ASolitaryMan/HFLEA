@@ -2,6 +2,8 @@
 
 Official implemention for the paper "Frame-level emotion state alignment method for speech emotion recognition", which is submitted to ICASSP 2024.
 
+## I am very sorry, I have carefully checked the data division method. The method we used is leave-one-session-out https://github.com/ECNU-Cross-Innovation-Lab/ShiftSER. For each fold, four sessions are used for training while one session is used for testing. The final result is the average of 5 folds. I made a mistake in my paper, and I appreciate everyone's correction. I am extremely sorry for the trouble caused to the readers.
+
 ## Libraries and dependencies
 
 1. pytorch
