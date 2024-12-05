@@ -705,7 +705,7 @@ if __name__ == "__main__":
     parser.add_argument('--seed', type=int, default=1234, help='make split manner is same with same seed')
     parser.add_argument('--fp16', type=bool, default=True, help='whether to use fp16')
     parser.add_argument('--gradient_accumulation_steps', type=int, default=1, help='gradient_accumulation_steps')
-    parser.add_argument('--max_length', type=int, default=10, help='max length of audio')
+    parser.add_argument('--max_length', type=int, default=6, help='max length of audio')
  
     
     args = parser.parse_args()
