@@ -44,6 +44,12 @@ def _parse_args():
         help="The layer index in HuBERT model for feature extraction. (``1`` means the first layer output)",
     )
     parser.add_argument(
+        "--hubert_base",
+        default=None,
+        type=Path,
+        help="The model checkpoint of hubert_pretrain_base model.",
+    )
+    parser.add_argument(
         "--checkpoint_path",
         default=None,
         type=Path,
@@ -123,6 +129,7 @@ def main(args):
                 device,
                 args.feat_type,
                 args.layer_index,
+                args.hubert_base,
                 args.checkpoint_path,
                 16_000,
                 args.num_cluster
